@@ -9,7 +9,7 @@ type App interface {
 
 	InitMiddlewares(config Config)
 
-	InitContext(config Config) error
+	InitContext(config Config)
 	SetContext(context AppContext)
 }
 

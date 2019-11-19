@@ -3,7 +3,7 @@ package fizzbuzzer
 // Fizzbuzzer implementation based on basic loop for
 type BasicFizzbuzzer struct{}
 
-func NewBasicFizzbuzzer(config *BasicConfig) Fizzbuzzer {
+func NewBasicFizzbuzzer() Fizzbuzzer {
 	return &BasicFizzbuzzer{}
 }
 

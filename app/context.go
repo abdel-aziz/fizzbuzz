@@ -8,13 +8,8 @@ type AppContext struct {
 	Fizzbuzzer fizzbuzzer.Fizzbuzzer
 }
 
-func (this *AppContext) InitContext(config Config) error {
-	var err error
-	this.Fizzbuzzer, err = fizzbuzzer.MakeFizzbuzzer(config.Fizzbuzzer)
-	if err != nil {
-		return err
-	}
-	return nil
+func (this *AppContext) InitContext(config Config) {
+	this.Fizzbuzzer = fizzbuzzer.NewBasicFizzbuzzer()
 }
 
 func (this *AppContext) SetContext(context AppContext) {

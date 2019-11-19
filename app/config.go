@@ -1,8 +1,6 @@
 package app
 
 import (
-	"fizzbuzz/service/fizzbuzzer"
-
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -14,8 +12,6 @@ type Config struct {
 	Port      int
 	DebugPort int
 	Router    string
-
-	Fizzbuzzer fizzbuzzer.Config
 }
 
 var config = flag.String("config", "", "Path to the server config file")
