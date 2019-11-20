@@ -4,4 +4,4 @@ set -e
 
 cd $GOPATH
 
-go build -o bin/fizzbuzz lbc.dev/fizzbuzz
+go build -o bin/fizzbuzz fizzbuzz

@@ -2,6 +2,7 @@ package list
 
 import (
 	"fizzbuzz/app"
+	"fizzbuzz/encoder"
 
 	"net/http"
 )
