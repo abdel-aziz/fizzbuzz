@@ -1,0 +1,11 @@
+version: "3"
+services:
+  fizzbuzz:
+    image: golang:1.13.4-alpine
+    ports:
+      - 1337:1337
+      - 6060:6060
+    volumes:
+      - .:/workspace/src/fizzbuzz
+      
+    command: /bin/sh -c "sh ./scripts/build.sh && ./bin/fizzbuzz -config ./config/fizzbuzz/fizzbuzz.json"
