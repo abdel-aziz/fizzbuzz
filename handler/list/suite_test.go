@@ -2,7 +2,6 @@ package list
 
 import (
 	"fizzbuzz/app"
-	"fizzbuzz/service/fizzbuzzer"
 
 	. "gopkg.in/check.v1"
 
@@ -22,10 +21,6 @@ func (this *ListHandlerTestSuite) SetUpSuite(c *C) {
 	var err error
 	this.App, err = app.NewApp(app.Config{
 		Router: "tester",
-		Fizzbuzzer: fizzbuzzer.Config{
-			Backend: "basic",
-			Basic:   &fizzbuzzer.BasicConfig{},
-		},
 	})
 	c.Assert(err, IsNil)
 

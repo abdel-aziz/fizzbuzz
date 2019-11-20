@@ -5,7 +5,7 @@ import (
 )
 
 func (this *FizzbuzzerTestSuite) TestBasicFizzbuzzer(c *C) {
-	fizzbuzzer := NewBasicFizzbuzzer(nil)
+	fizzbuzzer := NewBasicFizzbuzzer()
 	output := fizzbuzzer.Compute(2, 3, "fizz", "buzz", 6)
 
 	c.Assert(output, HasLen, 6)

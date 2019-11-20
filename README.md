@@ -1,13 +1,15 @@
 ###### README
 
-follow the next instructions tp run the fizzbuzz service:
+follow instructions to run the fizzbuzz service:
 ==================
 
+1. Dependencies
+> dep ensure
 
-1. Build go binary
+2. Build go binary
 > make build
 
-2. Run HTTP server
+3. Run HTTP server
 > make app-up
 
 #Note:
