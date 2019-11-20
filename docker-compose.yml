@@ -6,7 +6,8 @@ services:
       - 1337:1337
       - 6060:6060
     volumes:
-      - ./config:/workspace/config
-      - ./src:/workspace/src
-      - ./scripts:/workspace/scripts
+      - .:/go/src/fizzbuzz
+      - ./config:/go/config
+      - ./src:/go/src
+      - ./scripts:/go/scripts
     command: /bin/sh -c "sh ./scripts/build.sh && ./bin/fizzbuzz -config ./config/fizzbuzz/fizzbuzz.json"

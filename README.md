@@ -10,7 +10,9 @@ follow instructions to run the fizzbuzz service:
 > make build
 
 3. Run HTTP server
-> make app-up
+> make infra-up 
+or
+> docker-compose up 
 
 #Note:
 - The default host is 127.0.0.1 and if you want try the fizzbuzz app with your browser you can use this url:
